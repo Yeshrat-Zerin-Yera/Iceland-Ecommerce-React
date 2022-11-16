@@ -1,0 +1,42 @@
+.header {
+    height: 80px;
+    background: #1C2B35;
+}
+
+.nav {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    width: 60%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.nav a:hover {
+    color: #00eaff;
+}
+
+.active {
+    border-bottom: 2px solid #00eaff;
+}
+
+@media(max-width:500px) {
+    .nav {
+        width: 96%;
+    }
+
+    .nav img {
+        width: 100%;
+    }
+}
