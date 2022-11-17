@@ -11,8 +11,8 @@ const Header = () => {
                     <img src={Logo} alt="" />
                 </div>
                 <div>
-                    <NavLink to="/orders" className={({ isActive }) => isActive ? 'active' : undefined}>Orders</NavLink>
-                    <NavLink to="/shop">Shop</NavLink>
+                    <NavLink to="/shop" className={({ isActive }) => isActive ? 'active' : undefined}>Shop</NavLink>
+                    <NavLink to="/orders">Orders</NavLink>
                     <NavLink to="/inventory">Inventory</NavLink>
                     <NavLink to="/about">About</NavLink>
                 </div>

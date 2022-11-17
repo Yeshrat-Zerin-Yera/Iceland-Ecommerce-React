@@ -1,0 +1,34 @@
+.orders-container {
+    margin: 60px auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.reviewItems-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderCart-container {
+    width: 571px;
+    max-width: 571px;
+    border-radius: 8px;
+    background: #ECEFF1;
+}
+
+@media (max-width:1355px) {
+    .orders-container {
+        flex-direction: column-reverse;
+    }
+
+    .orderCart-container {
+        margin: auto;
+    }
+}
+
+@media (max-width:670px) {
+    .orderCart-container {
+        width: 300px;
+    }
+}

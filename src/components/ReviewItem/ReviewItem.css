@@ -1,0 +1,58 @@
+.review-item {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    padding: 8px;
+    width: 571px;
+    max-width: 571px;
+    margin: 20px auto;
+}
+
+.review-item img {
+    height: 91px;
+    width: 91px;
+    border-radius: 8px;
+}
+
+.review-details-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-details p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.review-details p,
+.review-details h4 {
+    margin: 0;
+}
+
+.review-details p span {
+    color: #FF6600;
+}
+
+.review-delete button {
+    height: 55px;
+    width: 55px;
+    font-size: 30px;
+    background: #FC9799;
+    color: #FF4949;
+    border: none;
+    border-radius: 50%;
+}
+
+.review-delete button:hover {
+    background-color: #FBADAE;
+    cursor: pointer;
+}
+
+@media (max-width:670px) {
+    .review-item {
+        width: 300px;
+    }
+}
