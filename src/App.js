@@ -1,11 +1,14 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layouts/Main/Main';
+import Home from './components/Home/Home';
 import Shop from './components/Shop/Shop';
 import Orders from './components/Orders/Orders';
 import Inventory from './components/Inventory/Inventory';
 import About from './components/About/About';
 import { productsAndCartLoader } from './loader/productsAndCartLoader';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   const router = createBrowserRouter([
@@ -15,8 +18,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('products.json'),
-          element: <Shop></Shop>
+          element: <Home></Home>
         },
         {
           path: '/shop',
@@ -35,6 +37,14 @@ function App() {
         {
           path: '/about',
           element: <About></About>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/signup',
+          element: <SignUp></SignUp>
         },
         {
           path: '*',

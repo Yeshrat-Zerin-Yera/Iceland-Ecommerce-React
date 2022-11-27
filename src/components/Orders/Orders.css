@@ -1,13 +1,19 @@
 .orders-container {
-    margin: 60px auto;
+    height: 80vh;
+    margin: auto;
     display: flex;
     gap: 40px;
     justify-content: space-around;
+    align-items: center;
 }
 
 .reviewItems-container {
     display: flex;
     flex-direction: column;
+}
+
+.reviewItems-container h2 {
+    margin-left: 8px;
 }
 
 .orderCart-container {
@@ -19,6 +25,8 @@
 
 @media (max-width:1355px) {
     .orders-container {
+        height: 100%;
+        margin: 60px auto;
         flex-direction: column-reverse;
     }
 

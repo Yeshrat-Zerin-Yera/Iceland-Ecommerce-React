@@ -1,9 +1,25 @@
-.cart{
+.cart {
     position: sticky;
     top: 0;
     padding: 20px;
 }
 
-.cart h2{
+.cart h2 {
     text-align: center;
+}
+
+.clear-cart-btn {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #1C2B35;
+    color: #FFFFFF;
+}
+
+.clear-cart-btn:hover {
+    background: #95A0A7;
 }
