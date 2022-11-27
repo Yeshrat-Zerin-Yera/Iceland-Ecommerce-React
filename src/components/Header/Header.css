@@ -43,6 +43,21 @@
     background: #416982;
 }
 
+.sign-out-btn {
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.sign-out-btn:hover {
+    color: #00EAFF;
+}
+
 @media (max-width: 1100px) {
     .nav-links {
         position: absolute;

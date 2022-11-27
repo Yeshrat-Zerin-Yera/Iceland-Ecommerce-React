@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Logo from '../../images/logo.png';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
+import { AuthContext } from '../../contexts/UserContext';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    const { user, logOut } = useContext(AuthContext);
 
     return (
         <nav className='header'>
@@ -25,8 +27,16 @@ const Header = () => {
                     <NavLink to="/orders">Orders</NavLink>
                     <NavLink to="/inventory">Inventory</NavLink>
                     <NavLink to="/about">About</NavLink>
-                    <NavLink to='/login'>Login</NavLink>
-                    <NavLink to='signup'>Sign Up</NavLink>
+                    {
+                        user?.uid
+                            ?
+                            <button onClick={logOut} className='sign-out-btn'>Sign Out</button>
+                            :
+                            <>
+                                <NavLink to='/login'>Login</NavLink>
+                                <NavLink to='signup'>Sign Up</NavLink>
+                            </>
+                    }
                 </div>
             </div>
         </nav>
