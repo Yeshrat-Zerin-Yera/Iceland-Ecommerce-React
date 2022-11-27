@@ -1,0 +1,129 @@
+.form-container {
+    box-sizing: border-box;
+    width: 500px;
+    height: 620px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin: 80px auto;
+    padding: 0 40px;
+    color: #1C2B35;
+}
+
+.form-title {
+    font-size: 35px;
+    text-align: center;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input {
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    width: 415px;
+    height: 55px;
+    background: #FF99004D;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    margin-top: 40px;
+}
+
+.login-btn:hover {
+    background: #FF990081;
+}
+
+.signup-link {
+    text-align: center;
+}
+
+.signup-link a {
+    text-decoration: none;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.divider hr {
+    width: 145px;
+    border: 1px solid #95A0A7;
+    margin: 0 20px;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 415px;
+    height: 55px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    font-size: 17px;
+    background: transparent;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 400px;
+        height: 550px;
+    }
+
+    .form-control input,
+    .login-btn,
+    .google-btn {
+        width: 300px;
+        height: 40px;
+    }
+
+    .login-btn {
+        margin-top: 30px;
+    }
+
+    .google-btn {
+        padding: 20px 0;
+    }
+
+    .divider hr {
+        width: 100px;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .form-container {
+        width: 300px;
+        height: 520px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .form-title {
+        font-size: 30px;
+    }
+
+    .form-control input,
+    .login-btn,
+    .google-btn {
+        width: 250px;
+    }
+
+    .login-btn {
+        margin-top: 20px;
+    }
+
+    .divider {
+        margin: 20px auto;
+    }
+}

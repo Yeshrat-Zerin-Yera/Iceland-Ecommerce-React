@@ -54,7 +54,7 @@
         flex-direction: column;
         z-index: 100;
         padding: 20px;
-        background: #1C2B35;
+        background: #3C5A6E;
     }
 
     .close {
@@ -63,5 +63,11 @@
 
     .x-mark-bar {
         display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        width: 200px;
     }
 }
